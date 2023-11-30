@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORTE 3</title>
+</head>
+<body>
+
+    <!-- Inicio Link Bootstraps-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+            <link rel="stylesheet" href="CORTE3.css">
+
+    <!-- Final Link Bootstraps-->
+
+
+        <div class="row">
+            <div class="col-12">
+                    <h1 id="inicial">
+                        PROGRAMACION MULTIHILOS EN JAVA.
+                    </h1>
+            </div>
+        </div>
+         <div class="row">
+             <div id="col2" class="col-12">
+
+
+                    <h1 id="title">
+
+                        La programación multihilo en Java se refiere al uso de múltiples hilos de ejecución para lograr la concurrencia dentro de un programa. En Java, los hilos permiten que partes diferentes del código se ejecuten de forma independiente, lo que puede mejorar el rendimiento y la capacidad de respuesta de una aplicación al realizar múltiples tareas simultáneamente.
+                                                 
+                    </h1>
+
+                    <p id="1P">
+
+                        Creación de hilos:
+                        Utilizando la clase Thread o implementando la interfaz Runnable.
+                        Puedo iniciar un hilo llamando al método start() del objeto Thread.
+
+                    </p>
+
+                    <p id="2P">
+
+                        Sincronización:
+                        En situaciones donde múltiples hilos acceden a los mismos recursos compartidos, la sincronización es crucial para evitar condiciones de carrera y garantizar la consistencia de los datos.
+                        La palabra clave synchronized, los bloqueos lock y las clases del paquete java.util.concurrent son herramientas para lograr la sincronización.
+
+
+                    <p id="3P">
+                        Métodos y conceptos clave:
+                        join(): Permite que un hilo espere a que otro hilo termine su ejecución.
+                        wait() y notify()/notifyAll(): Métodos utilizados para la comunicación entre hilos mediante la espera y la notificación.
+                        volatile: Palabra clave utilizada para garantizar que los cambios en una variable sean visibles para otros hilos.
+                    </p>
+
+                    <P id="4P">
+
+                        Gestión de hilos:
+                        ThreadPoolExecutor: Permite la gestión de un grupo de hilos, reutilización y control del número máximo de hilos en ejecución simultánea.
+                        ExecutorService: Interfaz para administrar la ejecución de tareas asincrónicas.
+
+                    </P>
+                  
+
+
+                    <h1 id="title2">CODIGO EN JAVA</h1>
+
+                        <img id="COD1" src="/CORTES/IMG/COD3.0.PNG" alt="COD1">
+                
+                        <p id="ex">
+
+
+                            creamos una clase Empleado que representa a un trabajador (un hilo) en una heladería. Cada empleado realiza 5 tareas simuladas, imprimiendo mensajes que indican en qué tarea están trabajando. Se simula una tarea que toma tiempo con Thread.sleep(1000), donde cada iteración del bucle se imprime un mensaje y se espera un segundo antes de pasar a la siguiente tarea. Al final, se imprime un mensaje cuando cada empleado (hilo) completa todas sus tareas.
+
+                            En la clase Heladeria, creamos dos empleados (dos hilos con nombres diferentes, Juan y María) y los iniciamos (start()) para que comiencen a trabajar simultáneamente en sus tareas.
+
+
+                      </p>
+                   
+
+
+
+
+             </div>
+         </div>
+
+
+
+
+         
+
+        
+</body>
+</html>
